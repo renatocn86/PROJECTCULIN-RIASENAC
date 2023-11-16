@@ -49,6 +49,7 @@ body{
     background:none;
     top: 25%;
     position: relative;
+    line-height: 25px;
 }
 
 .btn-menu:hover{
@@ -62,6 +63,7 @@ body{
 
 .btn-social{
     color: #ffffff;
+    margin: auto;
     width: 32px;
     height: 32px;
     border: 1px solid #00537c00;
@@ -75,6 +77,7 @@ body{
 .btn-social:hover{
     color: #ffffff;
     background-color: #004587;
+    background-size: 10mm;
 }
 
 .banner{
@@ -91,7 +94,7 @@ body{
     height: 80px;
     background: rgba(255, 255, 255, 0.705);
     border: 2px solif #fff;
-    border-radius: 50px;
+    border-radius: 10px;
     overflow: hidden;
     display: flex;
     justify-content: space-between;
