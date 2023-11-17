@@ -78,14 +78,6 @@ body{
     background-size: 10mm;
 }
 
-.banner{
-    margin: -10px;
-    background-image: url(../../media/images/67-lasanha-de-carne.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 300px;
-}
-
 @media screen and (max-width: 800px){
     /* CABEÇALHO */
     .menu, .social{
