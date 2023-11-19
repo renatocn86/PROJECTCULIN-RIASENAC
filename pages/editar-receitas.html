@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/src/css/editar-receitas.css">
@@ -7,59 +8,197 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <header>
         <div class="header">
             <div id="topo">
 
                 <h1 class="logo">
-                <a href="../index.html"><img width="100" src="../media/images/logo-senac-cnc-color-100.png" alt=""></a>
+                    <a href="../index.html"><img width="100" src="../media/images/logo-senac-cnc-color-100.png"
+                            alt=""></a>
                 </h1>
-    
+
                 <div class="menu">
                     <a href="../index.html">
-                    <button class="btn-menu">ínicio</button>
+                        <button class="btn-menu">ínicio</button>
                     </a>
-    
+
                     <a href="http://www.senac.br/" target="_blank">
-                    <button class="btn-menu">Senac</button>
+                        <button class="btn-menu">Senac</button>
                     </a>
-    
+
                     <a href="../pages/chefs.html">
-                    <button class="btn-menu">Chefs</button>
+                        <button class="btn-menu">Chefs</button>
                     </a>
-    
+
                     <a href="#">
-                    <button class="btn-menu">Sobre</button>
+                        <button class="btn-menu">Sobre</button>
                     </a>
-    
+
                     <a href="../pages/login.html">
-                    <button class="btn-menu">Login</button>
+                        <button class="btn-menu">Login</button>
                     </a>
                 </div><!--menu-->
 
                 <div class="social">
                     <a href="https://www.facebook.com/SenacBrasil" target="_blank">
-                    <button class="btn-social"><img width="20px" img src="../media/images/facebook.png" alt=""></button>
+                        <button class="btn-social"><img width="20px" img src="../media/images/facebook.png"
+                                alt=""></button>
                     </a>
 
                     <a href="https://www.instagram.com/senacbrasil/" target="_blank">
-                    <button class="btn-social"><img width="20px" img src="../media/images/instagram.png" alt=""></button>
+                        <button class="btn-social"><img width="20px" img src="../media/images/instagram.png"
+                                alt=""></button>
                     </a>
 
                     <a href="https://twitter.com/SenacBrasil" target="_blank">
-                    <button class="btn-social"><img width="20px" img src="../media/images/x-twitter.png" alt=""></button>
+                        <button class="btn-social"><img width="20px" img src="../media/images/x-twitter.png"
+                                alt=""></button>
                     </a>
 
                     <a href="https://www.linkedin.com/company/2655383" target="_blank">
-                    <button class="btn-social" alt=""><img width="20px" img src="../media/images/linkedin.png" alt=""></button>
+                        <button class="btn-social" alt=""><img width="20px" img src="../media/images/linkedin.png"
+                                alt=""></button>
                     </a>
 
                     <a href="https://www.youtube.com/user/SenacNacional" target="_blank">
-                    <button class="btn-social"><img width="20px" img src="../media/images/youtube.png" alt=""></button>
+                        <button class="btn-social"><img width="20px" img src="../media/images/youtube.png"
+                                alt=""></button>
                     </a>
 
                     <a class="menu-mobile mobile-view"></a>
 
                 </div><!--social-->
             </div><!--topo-->
+            <div id="editar">
+                <div class="registration-box">
+
+                    <div>
+                        <h1 id="rotulo">Editar Receitas:</h1>
+                        <br>
+                    </div>
+                    <form id="form">
+                        <div class="box1">
+                            <div>
+                                <label>Título:</label>
+                                <input type="text" name="Título" id="edit-box" required>
+                                <br>
+                            </div>
+
+                            <div>
+                                <label>Descrição:</label>
+                                <textarea id="edit-box" name="Descrição" rows="7" style="width: 30vw" required></textarea>
+                                <br>
+                            </div>
+                            <div>
+                                <label>Número de porções:</label>
+                                <input type="number" style="width: 12mm;" id="edit-box" required>
+                                <br>
+                            </div>
+                            <div>
+                                <label>Tempo de Preparação</label>
+                                <input type="time" id="edit-box" required>
+                            </div>
+                            <div>
+                                <label>Tempo de cozimento</label>
+                                <input type="time" id="edit-box" required>
+                            </div>
+                        </div>
+                    </form>
+                    <h2 id="titulos">Tipos de refeições:</h4><br<br>
+                    <div id="tipos">
+                       
+                        <div class="box2">
+                            
+                            <input type="checkbox" id="checkbox" value="Aperitivos">
+                            <label for="Aperitivos">Aperitivos</label>
+                            
+                            <input type="checkbox" id="checkbox" value="Sopa">
+                            <label for="Sopa">Sopa</label>
+                            
+                            <input type="checkbox" id="checkbox"value="Pratos Principais">
+                            <label for="Pratos Principais">Pratos Principais</label>
+                           
+                            <input type="checkbox" id="checkbox"value="Acompanhamentos">
+                            <label for="Acompanhamentos">Acompanhamentos</label>
+                           
+                            <input type="checkbox" id="checkbox"value="Pães e Produtos de Panificação">
+                            <label for="Pães e Produtos de Panificação">Pães e Produtos de Panificação</label>
+                           
+                            <input type="checkbox" id="checkbox"value="Saladas e Molhos para Saladas">
+                            <label for="Saladas e Molhos para Saladas">Saladas e Molhos para Saladas</label>
+                                                      
+                            <input type="checkbox" id="checkbox"value="Sobremesas">
+                            <label for="Sobremesas">Sobremesas</label>
+                           
+                            <input type="checkbox" id="checkbox"value="Lanches">
+                            <label for="Lanches">Lanches</label>
+                           
+                            <input type="checkbox" id="checkbox"value="Bebidas">
+                            <label for="Bebidas">Bebidas</label>
+                           
+                            <input type="checkbox" id="checkbox" value="Café da Manhã">
+                            <label for="Café da Manhã">Café da Manhã</label>
+                           
+                            <input type="checkbox" id="checkbox"value="Almoço">
+                            <label for="Almoço">Almoço</label>
+                           
+                            <input type="checkbox" id="checkbox" value="Outros">
+                            <label for="Outros">Outros</label>
+                           
+                        </div>
+                    </div>
+                        <h3 id="titulos">Ingredientes:</h3><br>
+                        <div id="ingredientes">
+                                <textarea id="ingredientes-box" style="width: 40vw;" rows="7" name="ingredientes" required></textarea>
+                        </div>
+                        <h3 id="titulos">Modo de Preparo:</h3><br>
+                        <div id="ingredientes">
+                                <textarea id="ingredientes-box" style="width: 40vw;" rows="15" name="ingredientes" required></textarea><br><br>
+                        </div>
+                        <div class="button">
+                        
+                            <button type="submit">Salvar</button><br>
+                            <button type="reset">Reset</button>                  
+                         </div>
+                         <div class="header">
+                            <div id="bottom">
+                
+                                <h1 class="logo">
+                                    <a href="../index.html"><img width="100" src="../media/images/logo-senac-cnc-color-100.png"
+                                            alt=""></a>
+                                </h1>
+                
+                                
+                
+                                <div class="social2">
+                                    <a href="https://www.facebook.com/SenacBrasil" target="_blank">
+                                        <button class="btn-social"><img width="20px" img src="../media/images/facebook.png"
+                                                alt=""></button>
+                                    </a>
+                
+                                    <a href="https://www.instagram.com/senacbrasil/" target="_blank">
+                                        <button class="btn-social"><img width="20px" img src="../media/images/instagram.png"
+                                                alt=""></button>
+                                    </a>
+                
+                                    <a href="https://twitter.com/SenacBrasil" target="_blank">
+                                        <button class="btn-social"><img width="20px" img src="../media/images/x-twitter.png"
+                                                alt=""></button>
+                                    </a>
+                
+                                    <a href="https://www.linkedin.com/company/2655383" target="_blank">
+                                        <button class="btn-social" alt=""><img width="20px" img src="../media/images/linkedin.png"
+                                                alt=""></button>
+                                    </a>
+                
+                                    <a href="https://www.youtube.com/user/SenacNacional" target="_blank">
+                                        <button class="btn-social"><img width="20px" img src="../media/images/youtube.png"
+                                                alt=""></button>
+                                    </a>
+                
+                                    <a class="menu-mobile mobile-view"></a>
+                
+                                </div>
+                            </div>
