@@ -22,7 +22,6 @@
     border-bottom: 5px solid #ff8000;
 }
 
-
 .logo{
     margin: 15px;
 }
@@ -35,8 +34,7 @@ html,
 body{
     width: 100%;
     min-height: 100vh;
-    background-color: #F2F2F2;
-    
+    background-color: #004587;
 }
 
 .btn-menu{
@@ -110,85 +108,3 @@ body{
     }
 
 }
-
-input , select, textarea, button{
-    border-radius: 3px;
-    border: 1px solid #004587;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
-}
-
-#rotulo{
-    color: #004587;
-    display: flex;
-    justify-content: center;
-
-}
-#form{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.box1{
-    width: 40%;
-    height: 350px;
-    background-color: white;
-    border-radius: 2mm;
-    padding: 2mm;
-    font-weight: bold;
-}
-#edit-box{
-     margin: 3.5mm;
-        
-}
-
-#tipos{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#titulos{
-    display: flex;
-    justify-content: center;
-    color: #004587;
-}
-
-.box2{
-    width: 40vw;
-    height: 150px;
-    background-color: white;
-    border-radius: 2mm;
-    padding: 2mm;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: flex-start;   
-    
-}
-
-
-#ingredientes{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 2mm;
-    padding: 5mm;
-}
-.button{
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding-bottom: 5mm;
-}
-
-.button :hover{
-    background: orange;
-    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
-    text-shadow: none;
-}
-
