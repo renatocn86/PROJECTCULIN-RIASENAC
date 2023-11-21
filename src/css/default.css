@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    flex-direction: flex;
 }
 
 .header {
@@ -36,8 +37,6 @@ body{
     background-color: #004587;
 }
 
-
-
 .btn-menu{
     width: 90px;
     height: 30px;
@@ -49,6 +48,7 @@ body{
     background:none;
     top: 25%;
     position: relative;
+    line-height: 25px;
 }
 
 .btn-menu:hover{
@@ -69,12 +69,13 @@ body{
     background-color: #676767;
     position: relative;
     top: 25%;
-    left: 25mm;
+    justify-content: space-around;
 }
 
 .btn-social:hover{
     color: #ffffff;
     background-color: #004587;
+    background-size: 10mm;
 }
 
 .banner{
@@ -91,12 +92,12 @@ body{
     height: 80px;
     background: rgba(255, 255, 255, 0.705);
     border: 2px solif #fff;
-    border-radius: 50px;
+    border-radius: 10px;
     overflow: hidden;
     display: flex;
     justify-content: space-between;
     position:relative;
-    top: -20%;
+    top: -25%;
 }
 
 .search-box .lupa-search{
@@ -129,5 +130,35 @@ body{
     width: 700px;
     height: 80px;
     background: rgba(255, 255, 255, 0);
+}
+
+@media screen and (max-width: 800px){
+    /* CABEÇALHO */
+    .menu, .social{
+        display: none;
+    }
+
+    /* BARRA DE PESQUISA */
+    .search-box{
+        margin: auto;
+        width: 350px;
+        height: 80px;
+        background: rgba(255, 255, 255, 0.705);
+        border: 2px solif #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        position:relative;
+        top: -27%;
+        left: 10px;
+    }
+
+    .search-box .imput-search input{
+        border: 0;
+        outline: 0;
+        font-size: 20px;
+        background: rgba(255, 255, 255, 0);
+    }
 }
 
