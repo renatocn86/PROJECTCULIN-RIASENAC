@@ -207,14 +207,18 @@ body{
 
 .card button {
     background-color: #ff8000;
-    height: 30px;
+    height: 40px;
     border: none;
     padding: 4px;
-    width: 80%;
+    width: 90%;
     color: #ffffff;
     font-size: 1rem;
     font-weight: bold;
     border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
 }
 
 .card button:hover {
@@ -274,6 +278,7 @@ body{
     background-color: #FF8000;
     background-size: 10mm;
 }
+/* RODAPÉ */
 
 @media screen and (max-width: 800px){
     /* CABEÇALHO */
