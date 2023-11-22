@@ -1,20 +1,19 @@
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
-  flex-direction: flex;
+  margin: 0px;
+  padding: 0px;
 }
 
-.header {
+#container {
   width: 100%;
   height: 100vh;
-  /* margin: -10px; */
+  margin: -10px;
 }
 
 #topo {
   width: 100%;
-  height: 25mm;
-  /* margin: 10px; */
+  height: 100px;
+  margin: 10px;
   background: rgb(255, 255, 255);
   display: flex;
   flex-direction: row;
@@ -60,6 +59,13 @@ body {
   font-size: 16;
 }
 
+.social {
+  display: flex;
+  margin-top: 25px;
+  justify-content: flex-end;
+  grid-column-gap: 5px;
+}
+
 .btn-social {
   color: #ffffff;
   width: 32px;
@@ -67,9 +73,6 @@ body {
   border: 1px solid #00537c00;
   border-radius: 1mm;
   background-color: #676767;
-  position: relative;
-  top: 25%;
-  justify-content: space-around;
 }
 
 .btn-social:hover {
@@ -77,20 +80,6 @@ body {
   background-color: #004587;
   background-size: 10mm;
 }
-/* 
-@media screen and (max-width: 800px){
-    
-    .menu, .social{
-        display: none;
-    }
-   
-    .search-box{
-        margin: auto;
-        width: 350px;
-	@@ -107,4 +107,102 @@ body{
-        background: rgba(255, 255, 255, 0);
-    }
-} */
 
 #receita {
   width: 100%;
@@ -107,6 +96,7 @@ body {
   display: flex;
   justify-content: center;
   color: #000000;
+  margin-top: 40px;
 }
 
 #butereceita {
@@ -136,6 +126,7 @@ body {
   width: 650px;
   border: 2px solid #ff8000;
 }
+
 #raspinha {
   display: flex;
   flex-direction: row;
@@ -155,6 +146,7 @@ body {
   margin: 20px;
   color: #000000;
 }
+
 #rosquinha {
   display: flex;
   flex-direction: column;
@@ -171,9 +163,13 @@ body {
   padding-top: 7px;
 }
 
-#txt{ 
+#preparo #tt{
+margin-bottom: 50px;
+}
 
-    font-size: 17pt;
+#txt {
+
+  font-size: 17pt;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   /* margin: 20px; */
   color: #000000;
@@ -182,10 +178,78 @@ body {
   align-items: center;
 }
 
-#tt{
-    display: flex;
-  justify-content: center;
-  align-items: center;
-    margin-bottom: 100px;
+#tt {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: -40px;
+  margin-left: 20px;
+}
 
+/* RODAPÉ */
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 115px;
+  color: white;
+  background-color: #00407E;
+  border-top: 5px solid #ff8000;
+  flex-direction: row;
+}
+
+.logo-rodapier {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 25px;
+  margin-left: 100px;
+  position: absolute;
+  justify-content: space-between;
+}
+
+.copyright {
+  font-size: 14px;
+  font-family: Sanchez;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.social-rodapier {
+  display: flex;
+  margin-right: 100px;
+  margin-top: -25px;
+  justify-content: flex-end;
+  grid-column-gap: 5px;
+}
+
+.btn-social-rodapier {
+  color: #ffffff;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #00537c00;
+  border-radius: 1mm;
+  background-color: #ffffff;
+}
+
+.btn-social-rodapier:hover {
+  color: #ffffff;
+  background-color: #FF8000;
+  background-size: 10mm;
+}
+
+/* RODAPÉ */
+
+@media screen and (max-width: 800px){ /* DEIXE A SUA PÁGINA RESPONSIVA AQUI */
+
+  /* CABEÇALHO */
+  #topo {
+    justify-content: flex-start;
+  }
+
+  .menu,
+  .social {
+    display: none;
+  }/* CABEÇALHO */
 }
