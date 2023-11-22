@@ -1,11 +1,10 @@
 *{
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
-    flex-direction: flex;
+    margin: 0px;
+    padding: 0px;
 }
 
-.header {
+#container {
     width: 100%;
     height: 100vh;
     margin: -10px;
@@ -13,7 +12,7 @@
 
 #topo {
     width: 100%;
-    height: 25mm;
+    height: 100px;
     margin: 10px;
     background: rgb(255, 255, 255);
     display: flex;
@@ -34,7 +33,7 @@ html,
 body{
     width: 100%;
     min-height: 100vh;
-    background-color: #004587;
+    background-color: #ffffff;
 }
 
 .btn-menu{
@@ -60,6 +59,13 @@ body{
     font-size: 16;
 }
 
+.social{
+    display: flex;
+    margin-top: 25px;
+    justify-content: flex-end;
+    grid-column-gap: 5px;
+}
+   
 .btn-social{
     color: #ffffff;
     width: 32px;
@@ -67,9 +73,6 @@ body{
     border: 1px solid #00537c00;
     border-radius: 1mm;
     background-color: #676767;
-    position: relative;
-    top: 25%;
-    justify-content: space-around;
 }
 
 .btn-social:hover{
@@ -79,11 +82,17 @@ body{
 }
 
 .banner{
+    bottom: 0;
     margin: -10px;
-    background-image: url(../../media/images/67-lasanha-de-carne.jpg);
+    background-image: url(../../media/images/banner.png);
     background-position: center;
     background-size: cover;
     height: 300px;
+}
+
+.texto{
+    margin: 10px;
+    word-wrap: break-word;
 }
 
 .search-box{
@@ -97,7 +106,7 @@ body{
     display: flex;
     justify-content: space-between;
     position:relative;
-    top: -25%;
+    top: 30%;
 }
 
 .search-box .lupa-search{
@@ -132,12 +141,178 @@ body{
     background: rgba(255, 255, 255, 0);
 }
 
+/* CATEGORY */
+.category{
+    border: 1px solid #00537c00;
+    border-radius: mm;
+    font-family: Sanchez;
+    font-size: 16px;
+    color: #004587;
+    background:none;
+    bottom: -20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    grid-column-gap: 5px;
+}
+
+.btn-category:hover{
+    width: 90px;
+    height: 30px;
+    color: #ffffff;
+    background-color: #004587;
+    background-size: 5mm;
+    font-size: 16;
+}
+
+/* CARDS */
+.cards{
+    padding: 10mm;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    justify-content: center;
+    margin-top: -200px;
+}
+
+.card {
+    background-color: #fff;
+    width: 180px;
+    height: 260px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 12px #aaaa;
+    margin: 2mm;
+}
+
+.card img {
+    width: 100%;
+    height: 130px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.card div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    height: 50%;
+}
+ 
+.card h2 {
+    font-size: .9rem;
+    color: #aaaa;
+}
+
+.card button {
+    background-color: #ff8000;
+    height: 40px;
+    border: none;
+    padding: 4px;
+    width: 90%;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.card button:hover {
+    background-color: #00407E;
+    cursor: pointer;
+}
+
+.chef img{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    position: absolute;
+    margin-bottom: 150px;
+    border: 3px solid #fff;
+}
+
+/* RODAPÉ */
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 115px;
+    color: white;
+    background-color: #00407E;
+    border-top: 5px solid #ff8000;
+    flex-direction: row;
+}
+
+.logo-rodapier{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 25px;
+    margin-left: 100px;
+    position: absolute;
+    justify-content: space-between;
+}
+
+.copyright {
+    font-size: 14px;
+    font-family: Sanchez;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.social-rodapier{
+    display: flex;
+    margin-right: 100px;
+    margin-top: -25px;
+    justify-content: flex-end;
+    grid-column-gap: 5px;
+}
+
+.btn-social-rodapier{
+    color: #ffffff;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #00537c00;
+    border-radius: 1mm;
+    background-color: #ffffff;
+}
+
+.btn-social-rodapier:hover{
+    color: #ffffff;
+    background-color: #FF8000;
+    background-size: 10mm;
+}
+
+.sobre{
+    width: 50%;
+    height: 100px;
+    border-radius: 5mm;
+    background-color: #00407E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* RODAPÉ */
+
 @media screen and (max-width: 800px){
     /* CABEÇALHO */
+    #topo{
+        justify-content: flex-start;  
+    }
+
     .menu, .social{
         display: none;
     }
-
+    
     /* BARRA DE PESQUISA */
     .search-box{
         margin: auto;
@@ -150,7 +325,7 @@ body{
         display: flex;
         justify-content: space-between;
         position:relative;
-        top: -27%;
+        top: 35%;
         left: 10px;
     }
 
@@ -160,5 +335,9 @@ body{
         font-size: 20px;
         background: rgba(255, 255, 255, 0);
     }
+
+    /* RODAPÉ */
+    
+
 }
 
