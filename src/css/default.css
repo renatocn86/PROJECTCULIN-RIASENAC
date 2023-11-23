@@ -143,37 +143,40 @@ body{
 
 /* CATEGORY */
 .category{
-    border: 1px solid #00537c00;
-    border-radius: mm;
     font-family: Sanchez;
     font-size: 16px;
     color: #004587;
     background:none;
-    bottom: -20px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     grid-column-gap: 5px;
+    padding: 5mm;
+    margin-top: 45px;
+}
+
+.btn-category{
+    border-radius: 10mm;
+    padding: 1rem;
+    border: 1px solid #777;
+    background: none;
 }
 
 .btn-category:hover{
-    width: 90px;
-    height: 30px;
     color: #ffffff;
     background-color: #004587;
     background-size: 5mm;
-    font-size: 16;
 }
 
 /* CARDS */
 .cards{
-    padding: 10mm;
+    padding: 5mm;
     display: flex;
     flex-wrap: wrap;
     margin: 10px;
     justify-content: center;
-    margin-top: -200px;
+    margin-top: -100px;
 }
 
 .card {
@@ -289,18 +292,6 @@ body{
     background-size: 10mm;
 }
 
-.sobre{
-    width: 50%;
-    height: 100px;
-    border-radius: 5mm;
-    background-color: #00407E;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-
 /* RODAPÉ */
 
 @media screen and (max-width: 800px){
@@ -340,4 +331,3 @@ body{
     
 
 }
-
