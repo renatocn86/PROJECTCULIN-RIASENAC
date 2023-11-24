@@ -1,4 +1,12 @@
-*{
+:root {
+    font-size: 16px;
+    --royal-blue-light: #ff0000;
+    --royal-blue-dark: #000000;
+    --white: #fff;
+    --backgroud: #e2e3e9;
+  }
+
+* {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
@@ -21,22 +29,22 @@
     border-bottom: 5px solid #ff8000;
 }
 
-.logo{
+.logo {
     margin: 15px;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
 html,
-body{
+body {
     width: 100%;
     min-height: 100vh;
     background-color: #ffffff;
 }
 
-.btn-menu{
+.btn-menu {
     width: 90px;
     height: 30px;
     border: 1px solid #00537c00;
@@ -44,13 +52,13 @@ body{
     font-family: Sanchez;
     font-size: 16px;
     color: #004587;
-    background:none;
+    background: none;
     top: 25%;
     position: relative;
     line-height: 25px;
 }
 
-.btn-menu:hover{
+.btn-menu:hover {
     width: 90px;
     height: 30px;
     color: #ffffff;
@@ -59,14 +67,14 @@ body{
     font-size: 16;
 }
 
-.social{
+.social {
     display: flex;
     margin-top: 25px;
     justify-content: flex-end;
     grid-column-gap: 5px;
 }
-   
-.btn-social{
+
+.btn-social {
     color: #ffffff;
     width: 32px;
     height: 32px;
@@ -75,13 +83,13 @@ body{
     background-color: #676767;
 }
 
-.btn-social:hover{
+.btn-social:hover {
     color: #ffffff;
     background-color: #004587;
     background-size: 10mm;
 }
 
-.banner{
+.banner {
     bottom: 0;
     margin: -10px;
     background-image: url(../../media/images/banner.png);
@@ -90,12 +98,12 @@ body{
     height: 300px;
 }
 
-.texto{
+.texto {
     margin: 10px;
     word-wrap: break-word;
 }
 
-.search-box{
+.search-box {
     margin: auto;
     width: 700px;
     height: 80px;
@@ -105,11 +113,11 @@ body{
     overflow: hidden;
     display: flex;
     justify-content: space-between;
-    position:relative;
+    position: relative;
     top: 30%;
 }
 
-.search-box .lupa-search{
+.search-box .lupa-search {
     min-width: 80px;
     height: 80px;
     display: flex;
@@ -119,12 +127,12 @@ body{
     color: #000000;
 }
 
-.search-box .lupa-search i{
+.search-box .lupa-search i {
     font-size: 35px;
     align-items: center;
 }
 
-.search-box .imput-search{
+.search-box .imput-search {
     position: absolute;
     left: 80px;
     width: 100%;
@@ -132,7 +140,7 @@ body{
     line-height: 80px;
 }
 
-.search-box .imput-search input{
+.search-box .imput-search input {
     border: 0;
     outline: 0;
     font-size: 20px;
@@ -142,11 +150,11 @@ body{
 }
 
 /* CATEGORY */
-.category{
+.category {
     font-family: Sanchez;
     font-size: 16px;
     color: #004587;
-    background:none;
+    background: none;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -156,21 +164,21 @@ body{
     margin-top: 45px;
 }
 
-.btn-category{
+.btn-category {
     border-radius: 10mm;
     padding: 1rem;
     border: 1px solid #777;
     background: none;
 }
 
-.btn-category:hover{
+.btn-category:hover {
     color: #ffffff;
     background-color: #004587;
     background-size: 5mm;
 }
 
 /* CARDS */
-.cards{
+.cards {
     padding: 5mm;
     display: flex;
     flex-wrap: wrap;
@@ -203,7 +211,7 @@ body{
     gap: 4px;
     height: 50%;
 }
- 
+
 .card h2 {
     font-size: .9rem;
     color: #aaaa;
@@ -230,7 +238,7 @@ body{
     cursor: pointer;
 }
 
-.chef img{
+.chef img {
     width: 60px;
     height: 60px;
     border-radius: 100%;
@@ -251,7 +259,7 @@ body{
     flex-direction: row;
 }
 
-.logo-rodapier{
+.logo-rodapier {
     display: flex;
     justify-content: flex-start;
     margin-top: 25px;
@@ -269,7 +277,7 @@ body{
     text-align: center;
 }
 
-.social-rodapier{
+.social-rodapier {
     display: flex;
     margin-right: 100px;
     margin-top: -25px;
@@ -277,7 +285,7 @@ body{
     grid-column-gap: 5px;
 }
 
-.btn-social-rodapier{
+.btn-social-rodapier {
     color: #ffffff;
     width: 32px;
     height: 32px;
@@ -286,26 +294,36 @@ body{
     background-color: #ffffff;
 }
 
-.btn-social-rodapier:hover{
+.btn-social-rodapier:hover {
     color: #ffffff;
     background-color: #FF8000;
     background-size: 10mm;
 }
 
+
+  .menu {
+    list-style: none;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+  }
+
 /* RODAPÉ */
 
-@media screen and (max-width: 800px){
-    /* CABEÇALHO */
-    #topo{
-        justify-content: flex-start;  
-    }
+@media screen and (max-width: 800px) {
 
-    .menu, .social{
+    .menu-desktop, .social {
         display: none;
     }
-    
+
+    /* CABEÇALHO */
+    #topo {
+        justify-content: flex-start;
+    }
+
     /* BARRA DE PESQUISA */
-    .search-box{
+    .search-box {
         margin: auto;
         width: 350px;
         height: 80px;
@@ -315,19 +333,22 @@ body{
         overflow: hidden;
         display: flex;
         justify-content: space-between;
-        position:relative;
+        position: relative;
         top: 35%;
         left: 10px;
     }
 
-    .search-box .imput-search input{
+    .search-box .imput-search input {
         border: 0;
         outline: 0;
         font-size: 20px;
         background: rgba(255, 255, 255, 0);
     }
 
-    /* RODAPÉ */
+    /* MENU RESPONSIVO */
     
+
+    /* RODAPÉ */
+
 
 }
